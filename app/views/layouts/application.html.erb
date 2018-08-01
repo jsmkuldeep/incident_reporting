@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Incident Reporting</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+	  <div class="container">
+    <section>
+      <p>
+        <a href="<%= root_path%>">
+          <h2>Incident Reporting</h2>
+        </a>
+      </p>
+    <%= yield %>
+        </section>
+  </div>
+
+  </body>
+</html>
